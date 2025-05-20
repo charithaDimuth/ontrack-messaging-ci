@@ -19,6 +19,6 @@ public class MessagingServiceTest {
         service.sendMessage("stu001", "tut999", "Need help on assignment.");
         List<Message> messages = service.getMessages();
         assertEquals(1, messages.size());
-        assertEquals("Need help on assignment.", messages.get(0).getMessageText());
+        assertEquals("WRONG TEXT", messages.get(0).getMessageText());
     }
 }
